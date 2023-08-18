@@ -72,7 +72,7 @@ const CustomAudioPlayer = ({ currentSong }) => {
         }
       };
     }
-  }, [audioIndex, songarray, isLoopOn, currentSong.link, audioRef, currentSong.title]);
+  }, [audioIndex, songarray, isLoopOn, currentSong.link]);
   
 
   const handleSeek = (e) => {
