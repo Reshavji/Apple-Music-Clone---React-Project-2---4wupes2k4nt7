@@ -9,7 +9,7 @@ import Sidebar from './Sidebar';
 import Music from './Music';
 import './Home.css';
 import Subscription from './SubscriptionPage/Subscription';
-
+import Artist from './Artist/Artist';
 const Home = () => {
   const [currentSong, setCurrentSong] = useState({
     link: null,
@@ -35,6 +35,7 @@ const Home = () => {
               <Route path="/browse" component={BrowseNow} />
               <Route path="/radio" component={Music} />
               <Route path="/subscription" component={Subscription} />
+              <Route path="/artist/:id" component={Artist} />
               <Route
                 path="/album/:id"
                 render={(props) => (

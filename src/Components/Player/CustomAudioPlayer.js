@@ -11,7 +11,6 @@ import LoopIcon from "@material-ui/icons/Loop";
 import './CustomAudioPlayer.css'; // Apply your own CSS
 
 const CustomAudioPlayer = ({ currentSong }) => {
-  console.log(currentSong.songData);
   const [value, setValue] = React.useState(30);
   const [audioIndex, setAudioIndex] = useState(0);
   const [progress, setProgress] = useState(0);
@@ -27,6 +26,7 @@ const CustomAudioPlayer = ({ currentSong }) => {
     }
     setValue(newValue);
   };
+ 
   useEffect(() => {
     const audio = audioRef.current;
 
@@ -72,8 +72,7 @@ const CustomAudioPlayer = ({ currentSong }) => {
         }
       };
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [audioIndex, songarray, isLoopOn,currentSong.link]);
+  }, [audioIndex, songarray, isLoopOn, currentSong.link]);
   
 
   const handleSeek = (e) => {

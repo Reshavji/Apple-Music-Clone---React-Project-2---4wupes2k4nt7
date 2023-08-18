@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import './AlbumDetails.css';
 
@@ -68,7 +69,7 @@ const AlbumDetails = ({ onClose, setCurrentSong }) => {
             const song = albumData.songs.find(song => song._id === songId);
             if (song) {
               return (
-                <div className='song-play' key={song._id} onClick={() =>
+                <div className='song-play' key={song._id} onDoubleClick={() =>
                   setCurrentSong({
                     link: song.audio_url,
                     image: song.image,
@@ -82,7 +83,9 @@ const AlbumDetails = ({ onClose, setCurrentSong }) => {
                     <img className='song-images' src={albumData.image} alt={albumData.title} />
                      <p className='audio-title'>{song.title}</p>
                      </div>
+                     <Link to={`/artist/${artist._id}`}>
                      <p>{artist.name}</p>
+                    </Link>
                   <p className='audio-title'>{song.mood}</p>
                   <p  className='play-btn'><PlayArrowIcon /></p>
                   </div>
