@@ -8,7 +8,7 @@ import { useStateValue } from './Context/StateProvider';
 import BrowseNow from './Components/BrowseNow';
 
 function App() {
-  const [{user}, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
 
   useEffect(() => {
     const fetchUserData = async (userId) => {
