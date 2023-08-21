@@ -152,18 +152,17 @@ const CustomAudioPlayer = ({ currentSong }) => {
       <div className="player-container">
         {currentSong.title ? (
           <div className="player-control">
-            <h4>{currentSong.title}</h4>
+            <div className='song-data'>
+            <h4 className='song-name'>{currentSong.title}</h4>
+            </div>
             <div className="custom-audio-player">
       <audio ref={audioRef} controls={false} onEnded={handleAudioEnd} autoPlay>
         {/* The source will be set in the useEffect */}
       </audio>
-      <div className="progress-bar" onClick={handleSeek}>
+    </div>
+    <div className="progress-bar" onClick={handleSeek}>
         <div className="progress" style={{ width: `${progress}%` }}></div>
       </div>
-      <div className="controls">
-
-      </div>
-    </div>
           </div>
         ) : (
           <svg
