@@ -20,7 +20,20 @@ function Password({ handleCloseLoginModal, email }) {
         console.error("Error logging in:", error);
       });
   };
+  const handleForgotPassword = () => {
+    setError(""); // Clear any previous errors
 
+    // Send password reset email
+    auth.sendPasswordResetEmail(email)
+      .then(() => {
+        alert("Password reset email sent successfully.");
+        // Optionally, show a message to the user that an email has been sent
+      })
+      .catch((error) => {
+        setError("Error sending password reset email. Please try again.");
+        console.error("Error sending password reset email:", error);
+      });
+  };
   // Close the dialog box when the user is successfully logged in
   useEffect(() => {
     if (loggedIn) {
@@ -61,7 +74,7 @@ function Password({ handleCloseLoginModal, email }) {
         /> <div  className="login__container">
         <p>Your Apple ID information is used to allow you to sign in securely and access your data. Apple records certain data for security, support, and reporting purposes. If you agree, Apple may also use your Apple ID information to send you marketing emails and communications, including based on your use of Apple services. See how your data is managed...</p>
       </div>
-        <span className="forgot-passwd">Forgot Apple ID or Password?</span>
+        <span className="forgot-passwd" onClick={handleForgotPassword}>Forgot Apple ID or Password?</span>
         {error && <p className="error-message">{error}</p>}
         <button className="submit-btn" onClick={handleLogin}>
             Sign In
