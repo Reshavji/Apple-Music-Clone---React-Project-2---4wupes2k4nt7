@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+<img src="https://github.com/Reshavji/Apple-Music-Clone---React-Project-2---4wupes2k4nt7/blob/main/Screenshot%202023-08-29%20125203.png" alt="apple">
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
