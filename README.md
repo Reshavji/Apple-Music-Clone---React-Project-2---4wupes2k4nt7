@@ -4,8 +4,8 @@
 #Runs the app in the development mode.\
 Open [Apple Music](https://spiffy-salamander-eed20a.netlify.app/) to view it in your browser.
 
-#Features
-User Authentication
+# Features
+# User Authentication
 The app incorporates a secure user authentication system using Firebase Authentication. Users can sign up and log in to access the full functionality of the music app.
 
 #Song Listing
