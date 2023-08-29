@@ -1,7 +1,7 @@
 # Apple Music React App
 <img src="https://github.com/Reshavji/Apple-Music-Clone---React-Project-2---4wupes2k4nt7/blob/main/Screenshot%202023-08-29%20125203.png" alt="apple">
 
-#Runs the app in the development mode.\
+# Runs the app in the development mode.\
 Open [Apple Music](https://spiffy-salamander-eed20a.netlify.app/) to view it in your browser.
 
 # Features
