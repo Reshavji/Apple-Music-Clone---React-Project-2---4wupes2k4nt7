@@ -1,63 +1,25 @@
 # Apple Music React App
 <img src="https://github.com/Reshavji/Apple-Music-Clone---React-Project-2---4wupes2k4nt7/blob/main/Screenshot%202023-08-29%20125203.png" alt="apple">
 
-Runs the app in the development mode.\
+#Runs the app in the development mode.\
 Open [Apple Music](https://spiffy-salamander-eed20a.netlify.app/) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#Features
+User Authentication
+The app incorporates a secure user authentication system using Firebase Authentication. Users can sign up and log in to access the full functionality of the music app.
 
-### `npm test`
+#Song Listing
+Upon successful login, users are greeted with a comprehensive list of songs available in the app's library. Each song is accompanied by its relevant information, such as the song title, artist, and album details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#Favoriting Songs
+Users have the option to mark their favorite songs from the song list. This selection is stored using the Context API, ensuring that even after navigating away from the page or logging out, the user's preferred songs remain in their favorites list.
 
-### `npm run build`
+#Custom Music Player
+The app features a custom-designed music player that allows users to play the songs they select. The player includes controls for play, pause, volume adjustment, and track progress tracking.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#Technologies Used
+React: The app is built using the React JavaScript library, providing a dynamic and efficient user interface.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#Firebase: Firebase is integrated for user authentication and registration purposes, enhancing the app's security and ease of use.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Context API: The Context API is employed to manage and maintain the user's favorite songs list across different components without the need for prop drilling.
